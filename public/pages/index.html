@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Notes App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="note-header">
+        <div class="header-container">
+            <h1 class="header-title">Notes</h1>
+            <p class="header-title">Take notes and never forget</p>
+        </div>
+    </div>
+    <!-- Note Body -->
+    <div class="notes-body" id="note-body">
+        <!-- Search and View Notes in left pannel -->
+        <div class="left-side-pannel">
+            <!-- Search bar -->
+            <div class="note-search-action">
+                <div class="search-container">
+                    <input type="text" name="search" placeholder="Search Notes" id="searchBar" class="input-search" />
+                </div>
+            </div>
+            <!-- View Saved Notes -->
+            <div class="view-notes-con" id="view-notes-con">
+
+            </div>
+        </div>
+
+        <!-- Create new notes in right pannel -->
+        <div class="right-side-pannel">
+            <div class="create-note-container">
+                <div class="create-note-area">
+                    <input type="text" name="title" placeholder="Title" id="noteTitle" class="note-title-input" />
+                    <textarea name="note" id="noteText" placeholder="Enter Note Text" cols="30" rows="10"
+                        class="note-text-area"></textarea>
+                    <button id="save-note-btn" class="save-note-btn btn" onclick="upsertNote()">Save Note</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Files -->
+    <script type="module" src="../js/listeners.js"></script>
+</body>
+
+</html>
